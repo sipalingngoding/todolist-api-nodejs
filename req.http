@@ -1,0 +1,28 @@
+GET http://localhost:8000/todolist
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ODQyLCJpYXQiOjE2OTQwOTU2NjMsImV4cCI6MTY5NDA5OTI2M30.N1KTvOEoSrZyRi499OEh0wCEIUFJGEGA6kavh4vwPZs
+
+###
+GET http://localhost:8000/users/2
+
+###
+GET http://localhost:8000/search?username=diory
+
+###
+POST http://localhost:8000/users/login
+Content-Type: application/json
+
+{
+  "email" : "diory@gmail.com",
+  "password": "password"
+}
+
+###
+PUT http://localhost:8000/users/1
+Content-Type: application/json
+
+{
+  "username" : "sinagadiory"
+}
+
+###
+DELETE http://localhost:8000/users/4
